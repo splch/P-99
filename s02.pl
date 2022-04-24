@@ -8,4 +8,4 @@ last_but_one(Penultimate, [Penultimate, _]).
 
 % Split the first element (_) from the list,
 % then check if the Tail has only two elements
-last_but_one(Answer, [_|Tail]) :- last_but_one(Answer, Tail).
+last_but_one(Answer, [_,Head|Tail]) :- last_but_one(Answer, [Head|Tail]).
